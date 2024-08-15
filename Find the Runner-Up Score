@@ -1,0 +1,24 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    arr = list(arr)
+    
+    max = -101
+    second = -101
+    g = 0
+    for x in arr:
+        while g == 0:
+            max = x 
+                    
+            g+=1
+            
+        if x > max:
+            max = x
+    
+    
+    for g in arr:
+        
+        if second < max and g > second and g != max:
+            second = g
+    
+    print(second)
